@@ -11,12 +11,12 @@
 
 ### Exercise 1
 
-#### **Before flag `-numReduceTasks 6`:**
+#### **Before flag** `-numReduceTasks 6`:
 - Launched map tasks: 9
 - Launched reduce tasks: 3
 - Merged Map outputs: 27
 
-#### **After flag `-numReduceTasks 6`:**
+#### **After flag** `-numReduceTasks 6`:
 - Launched map tasks: 9
 - Launched reduce tasks: 6
 - Merged Map outputs: 54
