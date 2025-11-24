@@ -31,7 +31,7 @@
 4. Did numbers of output files change? Why?  
    <u>**Answer**</u>: Yes, because we specified 6 reducer tasks, each reducer runs independently and writes its final result to its own unique file in the HDFS output directory.
 5. What does the value of 'Merged Map outputs' represents and how is it calculated?  
-   <u>**Answer**</u>: The number of possible tuples between mapper and reducer.  
+   <u>**Answer**</u>: The value represents the total number of data transfers between the map tasks and the reduce tasks.  
    There are 9 tasks of mappers, each of the 6 reducers receives the output of the mappers, hence 6 reducers each receiving 9 mapper outputs: 6x9 = 54.
 
 ---
